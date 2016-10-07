@@ -1,0 +1,9 @@
+<h2>Landmarks</h2>
+<% Landmark.all.each {|landmark| %>
+  <a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a>
+  <br></br>
+  <p><%=landmark.year_completed.to_s%><p>
+<% } %>
+<form action="/landmarks/new" method="get">
+  <input type="submit" value="Create a New Landmark">
+</form>

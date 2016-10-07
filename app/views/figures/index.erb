@@ -1,0 +1,8 @@
+<h2>Figures</h2>
+<% Figure.all.each {|figure| %>
+  <a href="/figures/<%=figure.id%>"><%=figure.name%></a>
+  <br></br>
+<% } %>
+<form action="/figures/new" method="get">
+  <input type="submit" value="Create a New Figure">
+</form>

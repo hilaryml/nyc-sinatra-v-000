@@ -1,3 +1,32 @@
+Figure.create(name: "Robert Moses")
+Figure.create(name: "Al Smith")
+Figure.create(name: "Theodore Roosevelt")
+Figure.create(name: "Peter Stuyvesant")
+Figure.create(name: "Boss Tweed")
+Figure.create(name: "Michael Bloomberg")
+Figure.create(name: "Ed Koch")
+Figure.create(name: "Fiorello LaGuardia")
+Figure.create(name: "Jimmy Walker")
+Figure.create(name: "Belle Moskowitz")
+
+Landmark.create(name: "BQE", figure_id: 1, year_completed: 1947)
+Landmark.create(name: "Holland Tunnel", figure_id: 5, year_completed: 1927)
+Landmark.create(name: "Wall Street Wall", figure_id: 4, year_completed: 1684)
+Landmark.create(name: "Brooklyn Battery Tunnel", figure_id: 10, year_completed: 1973)
+
+Title.create(name: "Mayor")
+Title.create(name: "President")
+Title.create(name: "Governor")
+Title.create(name: "NYC Parks commissioner")
+
+FigureTitle.create(title_id: 3, figure_id: 2)
+FigureTitle.create(title_id: 3, figure_id: 3)
+FigureTitle.create(title_id: 2, figure_id: 3)
+FigureTitle.create(title_id: 1, figure_id: 9)
+FigureTitle.create(title_id: 4, figure_id: 1)
+
+
+
 landmarks_list = {
     "Madison Square Guarden" => {
       :year_completed => 1901
@@ -44,7 +73,7 @@ figure_list = {
     },
     "Ada Lovelace" => {
     },
-    "Linus Torvalds" => { 
+    "Linus Torvalds" => {
     }
   }
 

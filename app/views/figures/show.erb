@@ -1,0 +1,13 @@
+<h2><%=@figure.name%></h2>
+<h4>Title(s):</h4>
+<% @figure.titles.each {|title| %>
+  <p><%= title.name %><p>
+<% } %>
+<br></br>
+<h4>Landmark(s):</h4>
+<% @figure.landmarks.each {|landmark| %>
+  <a href="/landmarks/<%=landmark.id%>"><%= landmark.name %></a>
+<% } %>
+<form action="/figures/<%=@figure.id%>/edit" method="get">
+  <input type="submit" value="Edit this Figure">
+</form>
